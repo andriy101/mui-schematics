@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsMuiInstall",
+  "title": "Material UI Install Options Schema",
+  "type": "object",
+  "properties": {
+    "skipInstallModules": {
+      "type": "boolean",
+      "default": false,
+      "description": "Do not add (and install) material ui dependencies to package.json"
+    },
+    "theme": {
+      "default": "light",
+      "enum": ["light", "dark"],
+      "description": "The theme to apply"
+    },
+    "mainFile": {
+      "default": "src/App.js",
+      "description": "Where should be initial imports added"
+    }
+  },
+  "required": []
+}

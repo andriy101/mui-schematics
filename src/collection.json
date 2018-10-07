@@ -1,0 +1,47 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "app-bar": {
+      "description": "Adds Material UI app bar component",
+      "factory": "./app-bar",
+      "schema": "./app-bar/schema.json",
+      "aliases": [ "ab" ]
+    },
+    "drawer": {
+      "description": "Adds Material UI drawer component",
+      "factory": "./drawer",
+      "schema": "./drawer/schema.json",
+      "aliases": [ "d" ]
+    },
+    "expansion-panel": {
+      "description": "Adds Material UI expansion panel component",
+      "factory": "./expansion-panel",
+      "schema": "./expansion-panel/schema.json",
+      "aliases": [ "ep", "accordion" ]
+    },
+    "grid-list": {
+      "description": "Adds Material UI grid list component",
+      "factory": "./grid-list",
+      "schema": "./grid-list/schema.json",
+      "aliases": [ "gl" ]
+    },
+    "install": {
+      "description": "Adds Material UI to the application without affecting any templates",
+      "factory": "./install",
+      "schema": "./install/schema.json",
+      "aliases": [ "add", "i" ]
+    },
+    "stepper": {
+      "description": "Adds Material UI stepper component",
+      "factory": "./stepper",
+      "schema": "./stepper/schema.json",
+      "aliases": [ "s" ]
+    },
+    "table": {
+      "description": "Adds Material UI table component",
+      "factory": "./table",
+      "schema": "./table/schema.json",
+      "aliases": [ "t" ]
+    }
+  }
+}
