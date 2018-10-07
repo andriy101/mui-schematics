@@ -1,6 +1,6 @@
 {
   "name": "mui-schematics",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Schematics for Material UI",
   "scripts": {
     "build": "tsc -p tsconfig.json",
