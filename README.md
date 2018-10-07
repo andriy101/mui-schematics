@@ -35,10 +35,10 @@ An alternative way to use schematics is to use it with [`npx`](https://www.npmjs
 
 Material UI Schematics module needs to be installed globally or locally as dev dependency:
 
-    # or globally with npm
+    # globally with npm
     npm i -g mui-schematics 
     # or globally with yarn
-    yarn global mui-schematics 
+    yarn global add mui-schematics 
 
     # or locally with npm
     npm i mui-schematics -D
