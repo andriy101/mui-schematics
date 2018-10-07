@@ -29,6 +29,21 @@ An alternative way to use schematics is to use it with [`npx`](https://www.npmjs
     yarn create react-app my-app
     # go to your new app
     cd my-app
+
+
+### Install Material UI Schematics
+
+Material UI Schematics module needs to be installed globally or locally as dev dependency:
+
+    # or globally with npm
+    npm i -g mui-schematics 
+    # or globally with yarn
+    yarn global mui-schematics 
+
+    # or locally with npm
+    npm i mui-schematics -D
+    # or locally with yarn
+    yarn add mui-schematics -D
     
 
 ### Adding (installing) Material UI using schematics
