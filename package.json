@@ -1,6 +1,6 @@
 {
   "name": "mui-schematics",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Schematics for Material UI",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -21,7 +21,6 @@
   "dependencies": {
     "@angular-devkit/core": "^0.8.1",
     "@angular-devkit/schematics": "^0.8.1",
-    "@material-ui/core": "^3.1.2",
     "@schematics/angular": "^0.8.1",
     "@types/jasmine": "^2.6.0",
     "@types/node": "^8.0.31",
