@@ -1,4 +1,26 @@
-### Material UI schematics
+<p align="center">
+  <a href="https://material-ui.com/" 
+     rel="noopener" 
+     target="_blank">
+    <img width="150" 
+         src="https://material-ui.com/static/images/material-ui-logo.svg" 
+         alt="Material-UI" /></a>
+  <a href="https://cli.angular.io/" 
+     rel="noopener" 
+     target="_blank">
+    <img width="150" 
+         src="https://angular.io/assets/images/logos/angular/angular.svg" 
+         alt="Angular CLI" /></a>
+
+  <h2>
+    Add <a href="https://material-ui.com">Material UI</a> to your <a href="https://reactjs.org/">React JS</a> project using <a href="https://www.npmjs.com/package/@angular-devkit/schematics">Angular Schematics</a>
+  </h2>
+</p>
+
+# Material UI schematics
+
+![npm version](https://badge.fury.io/js/mui-schematics.svg)
+![npm](https://img.shields.io/npm/dt/mui-schematics.svg)
 
 This project is enspired by [Angular Material Schematics](https://material.angular.io/guide/schematics) and adds [Material UI](https://material-ui.com/) support to your React JS project. Most of generated content is taken from the *Material UI Component Demos* section.
 
@@ -121,7 +143,7 @@ Currently, schematics are implemented for six components which share common opti
 
 ### Implemented Material UI components
 
-## [App Bar](https://material-ui.com/demos/app-bar/)
+#### [App Bar](https://material-ui.com/demos/app-bar/)
 
     schematics mui-schematics:app-bar --name <YOUR_COMPONENT_NAME>
     # or with ab alias
@@ -130,7 +152,7 @@ Currently, schematics are implemented for six components which share common opti
 Adds Material UI app-bar component to the top of your app.
 
 
-## [Drawer](https://material-ui.com/demos/drawers/)
+#### [Drawer](https://material-ui.com/demos/drawers/)
 
     schematics mui-schematics:drawer --name <YOUR_COMPONENT_NAME>
     # or with d alias
@@ -139,7 +161,7 @@ Adds Material UI app-bar component to the top of your app.
 Adds Material UI drawer component to the bottom of your app.
 
 
-## [Expansion Panel](https://material-ui.com/demos/expansion-panels/)
+#### [Expansion Panel](https://material-ui.com/demos/expansion-panels/)
 
     schematics mui-schematics:expansion-panel --name <YOUR_COMPONENT_NAME>
     # or with ep alias
@@ -155,7 +177,7 @@ Additional option:
 If this flag is provided [Controlled Accordion](https://material-ui.com/demos/expansion-panels/#controlled-accordion) will be created, otherwise [Simple Expansion Panel](https://material-ui.com/demos/expansion-panels/#simple-expansion-panel) will be created.
 
 
-## [Grid List](https://material-ui.com/demos/grid-list/)
+#### [Grid List](https://material-ui.com/demos/grid-list/)
 
     schematics mui-schematics:grid-list --name <YOUR_COMPONENT_NAME>
     # or with gl alias
@@ -169,7 +191,7 @@ Additional option:
 If this flag is provided [Single line Grid list](https://material-ui.com/demos/grid-list/#single-line-grid-list) will be created, otherwise [Grid list with titlebars](https://material-ui.com/demos/grid-list/#grid-list-with-titlebars) will be created.
 
 
-## [Stepper](https://material-ui.com/demos/steppers/)
+#### [Stepper](https://material-ui.com/demos/steppers/)
 
     schematics mui-schematics:stepper --name <YOUR_COMPONENT_NAME>
     # or with s alias
@@ -184,7 +206,7 @@ If this flag is provided [Vertical Stepper](https://material-ui.com/demos/steppe
 ](https://material-ui.com/demos/steppers/#horizontal-linear-alternative-label) will be created.
 
 
-## [Table](https://material-ui.com/demos/tables/)
+#### [Table](https://material-ui.com/demos/tables/)
 
     schematics mui-schematics:table --name <YOUR_COMPONENT_NAME>
     # or with t alias
@@ -204,7 +226,7 @@ AT any time you can switch theme palette type (between 'dark' and 'light'):
 
 
 ### TODOS
-* Add tests to generated cpmponents
+* Add tests to generated components
 * Add type script support
 * Add more components with more configuration options
 * Add more theme configuration options

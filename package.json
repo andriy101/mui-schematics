@@ -1,7 +1,11 @@
 {
   "name": "mui-schematics",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Schematics for Material UI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andriy101/mui-schematics.git"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
