@@ -3,21 +3,24 @@
      rel="noopener" 
      target="_blank">
     <img width="150" 
-         src="https://material-ui.com/static/images/material-ui-logo.svg" 
+         src="https://github.com/andriy101/mui-schematics/blob/master/assets/material-ui-logo.svg" 
          alt="Material-UI" /></a>
+  <a href="https://reactjs.org/" 
+     rel="noopener" 
+     target="_blank">
+    <img width="150" 
+         src="https://github.com/andriy101/mui-schematics/blob/master/assets/react.svg" 
+         alt="React JS" /></a>
   <a href="https://cli.angular.io/" 
      rel="noopener" 
      target="_blank">
     <img width="150" 
-         src="https://angular.io/assets/images/logos/angular/angular.svg" 
+         src="https://github.com/andriy101/mui-schematics/blob/master/assets/angular.svg" 
          alt="Angular CLI" /></a>
-
-  <h2>
-    Add <a href="https://material-ui.com">Material UI</a> to your <a href="https://reactjs.org/">React JS</a> project using <a href="https://www.npmjs.com/package/@angular-devkit/schematics">Angular Schematics</a>
-  </h2>
 </p>
 
 # Material UI schematics
+#### Add [Material UI](https://material-ui.com/) to your [React JS](https://reactjs.org//) project using [Angular Schematics](https://www.npmjs.com/package/@angular-devkit/schematics)
 
 ![npm version](https://badge.fury.io/js/mui-schematics.svg)
 ![npm](https://img.shields.io/npm/dt/mui-schematics.svg)
