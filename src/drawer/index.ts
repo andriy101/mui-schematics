@@ -6,6 +6,7 @@ import { chain,
          move,
          apply,
          url, 
+         filter,
          noop,
          template,
          schematic } from '@angular-devkit/schematics';
@@ -22,6 +23,7 @@ export default function(options: Schema): Rule {
   return chain([
     options.init ? schematic('install', options) : noop(),
     mergeWith(apply(url('./files'), [
+      options.noTest ? filter(path => !path.endsWith('.test.js')) : noop(),
       template({
         ...strings,
         ...options,

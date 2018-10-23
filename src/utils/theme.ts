@@ -34,8 +34,11 @@ export function addThemePaletteType(host: Tree, filePath: string, type: 'dark' |
       recorder.insertRight((<ts.Node>classDeclaration).getStart(), 
 `const theme = createMuiTheme({
   palette: {
-    type: '${type}',
+    type: '${type}'
   },
+  typography: {
+    useNextVariants: true
+  }
 });\n\n`);
       
     }

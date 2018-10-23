@@ -1,6 +1,7 @@
 import { chain, noop, Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
 import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
 
+import { versions } from '../utils/lib-versions';
 import { addPackageToPackageJson } from '../utils/package';
 import { Schema } from './schema';
 import { addThemePaletteType } from '../utils/theme';
@@ -25,16 +26,21 @@ export default function(options: Schema): Rule {
  */
 function installNpmModules() {
   return (host: Tree, context: SchematicContext) => {
-    const packageNames = [
-      '@material-ui/core',
-      '@material-ui/icons',
-      'typeface-roboto'
-    ];
-    packageNames.forEach(pkg => addPackageToPackageJson(host, 'dependencies', pkg));
+    const packageMap: {[key: string]: string} = {
+      '@material-ui/core': versions.materialUiCore,
+      '@material-ui/icons': versions.materialUiIcons,
+      'typeface-roboto': versions.typefaceRoboto
+    };
+    Object.keys(packageMap).forEach(pkg => addPackageToPackageJson(
+      host, 
+      'dependencies', 
+      pkg,
+      packageMap[pkg]
+    ));
     // install latest packages
     const installerTask = new NodePackageInstallTask({
       packageManager: 'yarn'//,
-      // packageName: packageNames.join(' ')
+      // packageName: Object.keys(packageMap).join(' ')
     });
     installerTask.toConfiguration = function () {
       return {

@@ -24,6 +24,11 @@
       "description": "Where should be initial imports added",
       "default": "src/App.js"
     },
+    "noTest": {
+      "type": "boolean",
+      "description": "Skip test file",
+      "default": false
+    },
     "init": {
       "type": "boolean",
       "description": "Perform initial install",

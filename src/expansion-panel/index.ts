@@ -23,6 +23,7 @@ export default function(options: Schema): Rule {
   return chain([
     options.init ? schematic('install', {}) : noop(),
     mergeWith(apply(url('./files'), [
+      options.noTest ? filter(path => !path.endsWith('.test.js')) : noop(),
       filter(path => path.endsWith('.css') || path.includes('@accordion') === options.accordion),
       template({
         ...strings,

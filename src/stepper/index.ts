@@ -23,12 +23,14 @@ export default function(options: Schema): Rule {
   return chain([
     options.init ? schematic('install', {}) : noop(),
     mergeWith(apply(url('./files'), [
-      filter(path => path.endsWith('.css') || path.includes('@vertical') === options.vertical),
+      options.noTest ? filter(path => !path.endsWith('.test.js')) : noop(),
+      filter(path => !path.includes(options.vertical ? '@horizontal' : '@vertical')),
       template({
         ...strings,
         ...options,
         'if-flat': (s: string) => options.flat ? '' : s,
-        'vertical': (s: string) => s
+        'vertical': (s: string) => s,
+        'horizontal': (s: string) => s
       }),
       move(`src/${options.path}`)
     ])),

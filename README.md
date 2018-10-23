@@ -80,8 +80,8 @@ Material UI Schematics module needs to be installed globally or locally as dev d
     npx @angular-devkit/schematics-cli mui-schematics:install
     
 `mui-schematics:install` argument means: 
-* use `mui-schematics` module (which implements schematics collection, and has collection.json file with a list of available schematics).
-* use schematics called `install` from within `mui-schematics` collection.
+* use `mui-schematics` module (which implements schematics collection, and has [collection.json](https://github.com/andriy101/mui-schematics/blob/master/src/collection.json) file with a list of available schematics).
+* use schematics called [`install`](https://github.com/andriy101/mui-schematics/blob/master/src/collection.json#L28) from within `mui-schematics` collection.
 
 You can use `i` or `add` aliases instead:
  
@@ -221,7 +221,7 @@ Adds Material UI table component to the bottom of your app.
 
 ### Switching theme palette type
 
-AT any time you can switch theme palette type (between 'dark' and 'light'):
+At any time you can switch theme palette type (between 'dark' and 'light'):
 
     # switch to dark palette
     schematics mui-schematics:i --theme dark --skipInstallModules

@@ -44,7 +44,7 @@ export function insertAfterFirstElement(host: Tree, filePath: string, componentT
   if (!alreadyExists && openingElements && openingElements.length) {
     const recorder = host.beginUpdate(filePath);
     const insertPosition = openingElements[0].getEnd();
-    recorder.insertRight(insertPosition, `\n          <${componentToAdd} />` + '      ');
+    recorder.insertRight(insertPosition, `\n        <${componentToAdd} />` + '      ');
     host.commitUpdate(recorder);
   }  
 }

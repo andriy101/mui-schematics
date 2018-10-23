@@ -11,6 +11,9 @@ export interface Schema {
   /** Where should be initial imports added. */
   mainFile: string;
 
+  /** Skip installing test file. */
+  noTest: boolean;
+
   /** Perform initial install. */
   init: boolean;
 
