@@ -121,11 +121,13 @@ my-app
 ...
 └── src
     ├── App.css
+    ├── App.test.js
     ├── App.js
     ...
     └── components
         └── my-app-bar
             ├── MyAppBar.css
+            ├── MyAppBar.test.js
             └── MyAppBar.js
 ```
 
@@ -140,6 +142,7 @@ Currently, schematics are implemented for six components which share common opti
 * *path* - the path within /src to create the component (defaults to `components`)
 * *flat* - flag to indicate if a dir is created    
 * *mainFile* - where should be initial imports added (defaults to `App.js`)
+* *noTest* - do not include test files 
 * *init* - perform initial install along with creating component (requires app restart)
 * *dry-run* - run through without making any changes
 * *force* - forces overwriting of files, which is not allowed by default
@@ -230,7 +233,8 @@ At any time you can switch theme palette type (between 'dark' and 'light'):
 
 
 ### TODOS
-* Add tests to generated components
+* Write specific tests for each generated component
 * Add type script support
+* Add SASS support
 * Add more components with more configuration options
 * Add more theme configuration options

@@ -1,6 +1,6 @@
 {
   "name": "mui-schematics",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Schematics for Material UI",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [
-    "schematics",
+    "angular schematics",
     "material-ui",
     "reactjs"
   ],
