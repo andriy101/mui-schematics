@@ -44,7 +44,7 @@ After this you will have a global command `schematics`.
 An alternative way to use schematics is to use it with [`npx`](https://www.npmjs.com/package/npx) command (`npx` comes with npm 5.2+ and higher):
 
     # this is equal to: schematics <ARGUMENTS>
-    npx @angular-devkit/schematics <ARGUMENTS>
+    npx @angular-devkit/schematics-cli <ARGUMENTS>
 
 
 ### Create a new React app using [Create React App](https://github.com/facebook/create-react-app) tool:
@@ -230,6 +230,10 @@ At any time you can switch theme palette type (between 'dark' and 'light'):
     schematics mui-schematics:i --theme dark --skipInstallModules
     # switch to light palette
     schematics mui-schematics:i --theme light --skipInstallModules
+
+
+### YouTube video
+[![Material UI Schematics](http://img.youtube.com/vi/Bgl7QdcIP1E/0.jpg)](https://www.youtube.com/watch?v=Bgl7QdcIP1E)
 
 
 ### TODOS
