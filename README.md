@@ -23,10 +23,11 @@
 
 Add [Material UI](https://material-ui.com/) to your [React JS](https://reactjs.org//) project using [Angular Schematics](https://www.npmjs.com/package/@angular-devkit/schematics)
 
-![npm version](https://badge.fury.io/js/mui-schematics.svg)
-![npm](https://img.shields.io/npm/dt/mui-schematics.svg)
+[![npm version](https://img.shields.io/npm/v/mui-schematics.svg?style=flat)](https://www.npmjs.com/package/mui-schematics)
+[![npm](https://img.shields.io/npm/dt/mui-schematics.svg)](https://npm-stat.com/charts.html?package=mui-schematics)
+[![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andriy101/mui-schematics/blob/master/LICENSE)
 
-This project is enspired by [Angular Material Schematics](https://material.angular.io/guide/schematics) and adds [Material UI](https://material-ui.com/) support to your React JS project. Most of generated content is taken from the *Material UI Component Demos* section.
+This project is inspired by [Angular Material Schematics](https://material.angular.io/guide/schematics) and adds [Material UI](https://material-ui.com/) support to your React JS project. Most of generated content is taken from the *Material UI Component Demos*  section.
 
 The engine under the hood is [Angular Devkit Schematics](https://www.npmjs.com/package/@angular-devkit/schematics) (and its CLI tool), which is mostly used for Angular apps (create, update, add component / service / class / interface, etc...). 
 
